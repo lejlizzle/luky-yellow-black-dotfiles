@@ -1,0 +1,58 @@
+@define-color module-bg #67581b;
+@define-color font #000000;
+
+*{
+  font-family: Jetbrains Mono Nerd;
+  font-weight: bold;
+  color: @font;
+  padding-top: 3;
+  padding-bottom: 3
+}
+
+#waybar{
+  background: transparent
+}
+
+#window,
+#clock,
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#battery,
+#tray,
+#power-profiles-daemon,
+#custom-power{
+  background: @module-bg;
+  border-radius: 5;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 4px
+}
+#custom-power{
+  margin-right: 0px
+}
+
+#network{
+  padding-right: 18px
+}
+
+#memory{
+  padding-right: 18px
+}
+
+#cpu{
+  padding-right: 14px
+}
+
+#custom-os_button {
+  background: @module-bg;
+  border-radius: 5px 0px 0px 5px;
+	font-family: "JetBrainsMono Nerd Font";
+  font-size: 24px;
+	padding-left: 18px;
+	padding-right: 7px;
+}
+#window{
+  border-radius: 0px 5px 5px 0px;
+}
