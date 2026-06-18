@@ -1,0 +1,107 @@
+/* 
+Creator: Luky
+Created: 16.06.2026
+Updated: 18.06.2026
+*/
+
+{
+  "layer": "top",
+  "margin": "5 7",
+
+  "modules-left": [
+    "custom/os_button",
+    "hyprland/window"
+  ],
+  "modules-center":[
+    "clock"
+  ],
+  "modules-right":[
+    "network",
+    "pulseaudio",
+    "pulseaudio#source",
+    "cpu",
+    "memory",
+    "battery",
+    "tray",
+    "power-profiles-daemon",
+    "custom/power"
+  ],
+
+  "custom/os_button": {
+        "format": "",
+        "on-click": "wofi --show drun",
+        "tooltip": false
+  },
+
+  "clock":{
+    "timezone": "Europe/Amsterdam",
+    "format": "{:%H:%M %d %B %Y}",
+    "format-alt": "{:%H:%M}",
+      "tooltip": false
+  },
+
+  "network": {
+    "format-wifi": "{essid} {signalStrength}% ",
+    "format-ethernet": "Wired ",
+    "format-disconnected": "Disconnected 󰌙",
+      "tooltip": false
+  },
+
+  "pulseaudio":{
+    "scroll-step": 5,
+    "format": "{volume}% {icon}",
+    "format-muted": " {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-bluetooth-muted": " {icon}",
+    "format-icons": {
+      "headphone": "",
+      "default": ["", "", " "]
+    },
+    "on-click": "pavucontrol",
+      "tooltip": false
+  },
+    "pulseaudio#source":{
+    "format": "{format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "on-scroll-up": "pamixer --default-source -i 5",
+    "on-scroll-down": "pamixer --default-source -d 5",
+    "on-click": "pavucontrol",
+      "tooltip": false
+    },
+
+    "cpu":{
+      "format": "{usage}% ",
+      "tooltip": false
+    },
+
+    "memory":{
+      "format": "{used}/{total} ",
+      "tooltip": false
+    },
+
+    "battery":{
+      "format": "{capacity}% {icon}",
+      "format-charging": "{capacity}% 󰂄",
+      "format-plugged": "{capacity}% ",
+      "format-icons": ["󰂃", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󱟢"],
+      "tooltip": false
+    },
+
+  "power-profiles-daemon":{
+    "format": "{icon}",
+    "format-icons": {
+      "performance": "󰓅",
+      "balanced": "󰾅",
+      "power-saver": "󰾆",
+      "tooltip": false
+    }
+  },
+
+    "custom/power":{
+      "format": "󰐥",
+      "on-click": "alacritty --class full -e bash -c  '~/.config/waybar/power.sh'",
+      "tooltip": false
+    }
+
+}
