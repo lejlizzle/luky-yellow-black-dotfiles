@@ -17,8 +17,8 @@ Make sure you have git installed
 
 ```
 cd ~/
-git clone https://github.com/luky2110/luky-purple-hyprland-dots.git
-cd luky-purple-hyprland-dots
+git clone https://github.com/luky2110/luky-yellow-black-dotfiles.git
+cd luky-yellow-black-dotfiles
 chmod +x installer.sh
 ./installer.sh
 hyprshutdown
