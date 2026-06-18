@@ -6,7 +6,7 @@ Updated: 18.06.2026
 
 {
   "layer": "top",
-  "margin": "5 7",
+  "margin": "5px 7px",
 
   "modules-left": [
     "custom/os_button",
