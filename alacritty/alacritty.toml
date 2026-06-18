@@ -1,0 +1,37 @@
+########################
+### Alacritty-Yellow ###
+########################
+# Created: 16.06.2026
+# Updated: 18.06.2026
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+
+size = 11.0
+
+[colors.primary]
+background = "#050505"
+foreground = "#f2e394"
+
+[colors.normal]
+black   = "#1a1a1a"
+red     = "#c98b2b"
+green   = "#a8b84a"
+yellow  = "#e6d05a"
+blue    = "#8f7b2e"
+magenta = "#b08f3c"
+cyan    = "#c7b44a"
+white   = "#d8d0a0"
+
+[colors.bright]
+black   = "#4d4d4d"
+red     = "#e0a83d"
+green   = "#c8d85a"
+yellow  = "#ffff80"
+blue    = "#b39b3c"
+magenta = "#d6b04a"
+cyan    = "#e6d05a"
+white   = "#ffffff"
